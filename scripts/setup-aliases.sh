@@ -62,11 +62,11 @@ alias discovery='/opt/discover/discover.sh'
 
 # Scanning and enumerating
 alias parse='/opt/nmapgrep/nmap-grep.sh scan.gnmap --out-dir . --no-up'
-alias enum='mkdir logs && msfconsole -r /root/Tools/enum.rc'
-alias scan='/root/Tools/scan.sh'
+alias enum='mkdir logs && msfconsole -r /opt/scripts/enum.rc'
+alias scan='/opt/scripts/scan.sh'
 
 # Fix corrupted ZSH history file
-alias fixzsh='/root/Tools/zsh_history_fix'
+alias fixzsh='/opt/scripts/zsh_history_fix'
 
 # Update all the things
 alias sysupdate='apt update && apt upgrade -y'
