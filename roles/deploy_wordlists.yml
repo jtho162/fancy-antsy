@@ -7,12 +7,12 @@
   shell: cd /usr/share/wordlists/; git clone https://github.com/x90skysn3k/brutespray.git
   ignore_errors: True
 
-- name: Copying local wordlists
-  copy:
-    src: "{{ item }}"
-    dest: '/usr/share/wordlists/'
-  with_fileglob:
-    - "wordlists/*"
+#- name: Copying local wordlists
+#  copy:
+#    src: "{{ item }}"
+#    dest: '/usr/share/wordlists/'
+#  with_fileglob:
+#    - "wordlists/*"
 
 - name: Update the database
   shell: updatedb
