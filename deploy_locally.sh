@@ -1,6 +1,10 @@
 #!/bin/bash
 echo 'Do not forget to set the root password'
-echo 'Do not forget to change the credentials in hosts.ini'
+#echo 'Do not forget to change the credentials in hosts.ini'
+echo "You probably forgot to change the credentials, didn't you?"
+read -p "Confirm the root password " rootVar
+	echo "kali ansible_connection=ssh ansible_host=127.0.0.1 ansible_ssh_user=root ansible_ssh_pass=$rootVar" > host.ini
+
 sleep 8
 
 # Run as root
