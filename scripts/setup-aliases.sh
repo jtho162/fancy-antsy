@@ -1,7 +1,5 @@
 #!/bin/bash
 echo "
-alias sl='ls'
-
 ## grep aliases
 alias grep="grep --color=auto"
 alias ngrep="grep -n"
@@ -47,6 +45,33 @@ dockergoto () {
 docker exec -it "$@" /bin/sh
 }
 
-alias cls='clear'
+# enable auto-suggestions based on the history
+if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+    . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    # change suggestion color
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
+fi
 
-" >> /etc/bash.bashrc
+# enable command-not-found if installed
+if [ -f /etc/zsh_command_not_found ]; then
+    . /etc/zsh_command_not_found
+fi
+
+# user defined aliases
+alias discovery='/opt/discover/discover.sh'
+
+# Scanning and enumerating
+alias parse='/opt/nmapgrep/nmap-grep.sh scan.gnmap --out-dir . --no-up'
+alias enum='mkdir logs && msfconsole -r /root/Tools/enum.rc'
+alias scan='/root/Tools/scan.sh'
+
+# Fix corrupted ZSH history file
+alias fixzsh='/root/Tools/zsh_history_fix'
+
+# Update all the things
+alias sysupdate='apt update && apt upgrade -y'
+
+# Because words are hard
+alias celar='clear'
+
+" >> ~/.zshrc
