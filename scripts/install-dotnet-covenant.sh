@@ -19,4 +19,4 @@ sudo apt-get install -y dotnet-runtime-5.0
 sudo apt-get install -y dotnet-runtime-3.1
 
 # Covenant Pull
-git clone --recurse-submodules https://github.com/cobbr/Covenant /opt/Covenant
+git clone --recurse-submodules https://github.com/cobbr/Covenant.git /opt/Covenant
