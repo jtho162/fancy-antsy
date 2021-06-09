@@ -4,7 +4,7 @@ cd /tmp
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 
-apt install python3-venv
+apt install -y python3-venv
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
 source ~/.zshrc
