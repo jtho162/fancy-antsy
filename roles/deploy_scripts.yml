@@ -46,6 +46,10 @@
   script: scripts/install-rustscan.sh
   ignore_errors: True
 
+- name: Clone and install misc. scipts
+  script: scripts/install-misc.sh
+  ignore_errors: True
+  
 - name: Install bettercap
   apt:
     name: bettercap
