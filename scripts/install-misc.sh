@@ -21,3 +21,8 @@ wget https://github.com/shapeshed/dotfiles/blob/master/bin/zsh_history_fix
 wget http://pentestmonkey.net/tools/php-reverse-shell/php-reverse-shell-1.0.tar.gz
 tar xzf php-reverse-shell-1.0.tar.gz
 rm php-reverse-shell-1.0.tar.gz
+
+# Clones nmap-grep
+cd /opt
+wget https://raw.githubusercontent.com/jtho162/Random-Tools/master/nmap-grep.sh
+chmod +x nmap-grep.sh
