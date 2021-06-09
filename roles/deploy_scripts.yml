@@ -34,9 +34,9 @@
   script: scripts/install-EyeWitness.sh
   ignore_errors: True
 
-#- name: Clone and install Oh-My-Zsh
-#  script: scripts/install-oh-my-zsh.sh
-#  ignore_errors: True
+- name: Clone and install Oh-My-Zsh
+  script: scripts/install-oh-my-zsh.sh
+  ignore_errors: True
   
 - name: Clone and install AutoRecon
   script: scripts/install-autorecon.sh
