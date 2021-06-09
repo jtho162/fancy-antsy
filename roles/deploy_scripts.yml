@@ -30,6 +30,22 @@
   script: scripts/install-mitm6-impacket.sh
   ignore_errors: True
 
+- name: Install EyeWitness
+  script: scripts/install-EyeWitness.sh
+  ignore_errors: True
+
+- name: Clone and install Oh-My-Zsh
+  script: scripts/install-oh-my-zsh.sh
+  ignore_errors: True
+  
+- name: Clone and install AutoRecon
+  script: scripts/install-autorecon.sh
+  ignore_errors: True 
+  
+- name: Clone and install RustScan
+  script: scripts/install-rustscan.sh
+  ignore_errors: True
+
 - name: Install bettercap
   apt:
     name: bettercap
