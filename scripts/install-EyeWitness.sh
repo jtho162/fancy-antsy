@@ -1,2 +1,2 @@
 #!/bin/bash
-apt install eyewitness
+apt install eyewitness -y
