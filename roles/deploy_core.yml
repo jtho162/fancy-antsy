@@ -12,7 +12,7 @@
     state: present
 
 - name: Install pip
-  script: scripts/install-pip.sh
+  script: scripts/install-pip-pipx.sh
 
 - name: Update the database
   shell: updatedb
