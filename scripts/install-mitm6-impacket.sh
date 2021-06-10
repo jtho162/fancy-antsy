@@ -1,5 +1,4 @@
 #!/bin/bash
-/usr/local/bin/pipx install mitm6
+/root/.local/bin/pipx install mitm6
 
-git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket
-python3 /opt/impacket/setup.py install
+/root/.local/bin/pipx install impacket
