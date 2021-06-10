@@ -23,6 +23,5 @@ tar xzf php-reverse-shell-1.0.tar.gz
 rm php-reverse-shell-1.0.tar.gz
 
 # Clones nmap-grep
-cd /opt
 wget https://raw.githubusercontent.com/jtho162/Random-Tools/master/nmap-grep.sh
 chmod +x nmap-grep.sh
