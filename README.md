@@ -20,35 +20,37 @@ sudo bash deploy_locally.sh
 
 ### Deploys
 - Ansible
-- Docker
-- Dirsearch
 - Aquatone
-- BruteX
-- BlackWidow
-- PowerSploit
-- EvilWinrm
-- QSearchSploit
-- Invoke-Obfuscation
-- SecLists
+- AutoRecon
 - Bettercap
-- Unicorn
-- Windapsearch
+- BlackWidow
 - Bloodhound.py
-- Kerbrute
-- Mitm6
-- Winpeas
-- Snaffler
+- BruteX
+- Brutespray
 - Chisel
+- Covenant
+- Dirsearch
+- Docker
+- Dotnet Framework
+- EvilWinrm
 - Git-dumper
 - Golang
-- Ohmyzsh
-- Dotnet Framework
-- Covenant
-- Brutespray
+- Invoke-Obfuscation
+- Kerbrute
+- LinPEAS
+- Mitm6
+- PowerSploit
+- QSearchSploit
+- RustScan
+- Snaffler
+- Unicorn
+- Windapsearch
+- WinPEAS
 
 
 ### Changelog
 ```sh
 v1.0 5/28/2021 - Creation
+v1.1 6/10/2021 - Added extra tools and modified install script
 ```
 
