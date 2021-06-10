@@ -10,11 +10,10 @@ Ansible playbook to deploy tools, bins, to fresh kali deployments and operations
 https://www.kali.org/downloads/
 
 ## Pull repo and let ansible go to work
-git clone https://github.com/willoughbee/fancy-ancy.git /opt/fancy-ancy
+git clone https://github.com/jtho162/fancy-ancy.git /opt/fancy-ancy
 cd /opt/fancy-ancy
 
-## Modify variables then deploy
-vim hosts.ini
+## Deploy
 sudo bash deploy_locally.sh
 ```
 
