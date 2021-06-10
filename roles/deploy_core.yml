@@ -3,9 +3,6 @@
   apt:
     update_cache: yes
 
-#- name: Installing docker
-#  script: scripts/install-docker.sh
-
 - name: Install git
   apt:
     name: git
