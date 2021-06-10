@@ -14,9 +14,6 @@
 - name: Install pip and pipx
   script: scripts/install-pip-pipx.sh
 
-#- name: Hopefully fix pip
-#  script: scripts/source.sh
-
 - name: Update the database
   shell: updatedb
 
