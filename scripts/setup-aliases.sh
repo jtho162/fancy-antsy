@@ -74,4 +74,4 @@ alias sysupdate='apt update && apt upgrade -y'
 # Because words are hard
 alias celar='clear'
 
-" >> /root/.zshrc
+" >> /etc/zsh/zshrc
